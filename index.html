@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Binance api</title>
+</head>
+<body>
+    <div id="app">
+
+        <div v-for="coin in coins" class="coin">
+            <h2>{{ coin.symbol }}</h2>
+            <h1>BID : {{ coin.bidPrice }}</h1>
+            <h1>ASK : {{ coin.askPrice }}</h1>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="script.js"></script>
+</body>
+</html>
