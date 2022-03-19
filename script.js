@@ -9,7 +9,7 @@ let app = Vue.createApp({
         const info = await res.json()
         console.log(info)
         info.forEach((item) => {
-            if(item.symbol.endsWith("USDT")){
+            if(item.symbol.endsWith("USDT") && parseInt(item.bidPrice)) {
                 this.coins.push(item)
             }
         })

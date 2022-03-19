@@ -11,7 +11,7 @@
     <div id="app" class="coinContainer" v-cloak>
 
         <div v-for="coin in coins" class="coin">
-            <h2>{{ coin.symbol }}</h2>
+            <h2>{{ coin.symbol.slice(0, -4) }} - {{ coin.symbol.slice(-4) }}</h2>
             <h1>BID : {{ coin.bidPrice }}</h1>
             <h1>ASK : {{ coin.askPrice }}</h1>
         </div>
