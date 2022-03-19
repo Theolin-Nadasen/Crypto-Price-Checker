@@ -12,7 +12,15 @@ body{
     color: white;
 }
 
+.coin h2{
+    text-align: center;
+}
+
 .coinContainer{
     display: grid;
     grid-template-columns: repeat(auto-fit, 350px);
+}
+
+[v-cloak]{
+    display: none;
 }
