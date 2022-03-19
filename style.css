@@ -11,3 +11,8 @@ body{
     border: 2px solid white;
     color: white;
 }
+
+.coinContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 350px);
+}
