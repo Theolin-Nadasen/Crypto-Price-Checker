@@ -4,20 +4,30 @@ body{
 
 .coin{
     display: inline-block;
+    text-align: center;
     margin: 5px;
     padding-left: 10px;
     padding-right: 10px;
-    background-color: transparent;
-    border: 2px solid white;
-    color: white;
+    background-color: black;
+    color: gold;
+    border: 2px solid gold;
+    border-radius: 10%;
 }
 
-.coin h2{
+.Heading{
     text-align: center;
+    color: lime;
+    background-color: black;
+}
+
+.Subheading{
+    text-align: center;
+    color: lime;
 }
 
 .coinContainer{
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(auto-fit, 350px);
 }
 
